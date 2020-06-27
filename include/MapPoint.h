@@ -65,7 +65,7 @@ public:
     MapPoint(const cv::Mat &Pos, KeyFrame* pRefKF, Map* pMap);
     /**
      * @brief 给定坐标与frame构造MapPoint
-     * @detials 被双目：UpdateLastFrame()调用
+     * @details 被双目：UpdateLastFrame()调用
      * @param[in] Pos       MapPoint的坐标（wrt世界坐标系）  //? wrt世界坐标系, 是什么意思? 
      * @param[in] pMap      Map
      * @param[in] pFrame    Frame
