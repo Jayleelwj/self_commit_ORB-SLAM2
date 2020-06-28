@@ -111,7 +111,7 @@ public:
      * @brief 添加观测
      *
      * 记录哪些KeyFrame的那个特征点能观测到该MapPoint \n
-     * 并增加观测的相机数目nObs，单目+1，双目或者grbd+2
+     * 并增加观测的相机数目nObs，单目+1，双目或者rgbd+2
      * 这个函数是建立关键帧共视关系的核心函数，能共同观测到某些MapPoints的关键帧是共视关键帧
      * @param[in] pKF KeyFrame,观测到当前地图点的关键帧
      * @param[in] idx MapPoint在KeyFrame中的索引
@@ -169,7 +169,7 @@ public:
 
     /**
      * @brief 增加可视次数
-     * @detials Visible表示：
+     * @details Visible表示：
      * \n 1. 该MapPoint在某些帧的视野范围内，通过Frame::isInFrustum()函数判断
      * \n 2. 该MapPoint被这些帧观测到，但并不一定能和这些帧的特征点匹配上
      * \n   例如：有一个MapPoint（记为M），在某一帧F的视野范围内，
