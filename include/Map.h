@@ -157,7 +157,7 @@ public:
 protected:
     
     std::set<MapPoint*> mspMapPoints; ///< MapPoints
-    std::set<KeyFrame*> mspKeyFrames; ///< Keyframs
+    std::set<KeyFrame*> mspKeyFrames; ///< Keyframes
 
     ///参考地图点
     std::vector<MapPoint*> mvpReferenceMapPoints;
