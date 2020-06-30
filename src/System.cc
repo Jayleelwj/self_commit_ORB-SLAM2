@@ -518,7 +518,8 @@ void System::SaveKeyFrameTrajectoryTUM(const string &filename)
 
     //文件写入的准备操作
     ofstream f;
-    f.open(filename.c_str());
+    f.open(filename.c_str());//将string 转换成const char*
+    //f.open("./trajds.txt");其中"./trajds.txt"是const char*类型
     f << fixed;
 
     //对于每个关键帧
