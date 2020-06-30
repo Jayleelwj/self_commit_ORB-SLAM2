@@ -43,6 +43,7 @@ System::System(const string &strVocFile,					//词典文件路径
         			 mbDeactivateLocalizationMode(false)		//没有这个模式转换标志
 {
     // Output welcome message
+
     cout << endl <<
     "ORB-SLAM2 Copyright (C) 2014-2016 Raul Mur-Artal, University of Zaragoza." << endl <<
     "This program comes with ABSOLUTELY NO WARRANTY;" << endl  <<
@@ -433,7 +434,7 @@ void System::SaveTrajectoryTUM(const string &filename)
 
     //文件写入的准备工作
     ofstream f;
-    f.open(filename.c_str());
+    f.open(filename.c_str());//c_str() 将字符串string转换成C风格的const char*
     //这个可以理解为，在输出浮点数的时候使用0.3141592654这样的方式而不是使用科学计数法
     f << fixed;
 
